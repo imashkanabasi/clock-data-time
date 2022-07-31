@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS STYLE FILE -->
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/font awesome/css/all.min.css">
+    <title>CLOCK , DATE & TIME</title>
+  </head>
+  <body onload="initClock()">
+    <!-- Dif mood -->
+    <div class="toggle">
+      <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+      <label for="checkbox" class="label">
+         <i class="fas fa-sun"></i>
+         <i class="fas fa-moon"></i>
+         <div class="ball"></div>
+      </label>
+    </div>
+
+    <!-- START DIGITAL CLOCK -->
+    <div class="datatime">
+      <div class="date">
+        <span id="dayname">Day</span>,
+        <span id="month">Month</span>
+        <span id="daynum">00</span>,
+        <span id="Year">Year</span>
+      </div>
+      <div class="time">
+        <span id="hour">00</span>: <span id="minutes">00</span>:
+        <span id="seconds">00</span>
+        <span id="period">AM</span>
+      </div>
+    </div>
+    <!-- END DIGITAL CLOCK -->
+
+    <!-- START MANUAL CLOCK -->
+    <div class="clock">
+      <div class="hour">
+        <div class="hr" id="hr"></div>
+      </div>
+      <div class="min">
+        <div class="mn" id="mn"></div>
+      </div>
+      <div class="sec">
+        <div class="sc" id="sc"></div>
+      </div>
+    </div>
+    <!-- END MANUAL CLOCK -->
+
+    <!-- SCRIPT JS FILE -->
+    <script src="/index.js"></script>
+  </body>
+</html>
